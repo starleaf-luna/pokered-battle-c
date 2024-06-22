@@ -10,12 +10,13 @@ int main() {
     // print start message
     printf(start_msg);
     
-    // todo
+    // menu
     unsigned char index;
     printf(menu_msg);
     scanf("%d", &index);
     printf("\n");
     
+    // menu options
     while (index) {
         switch (index) {
             case 0:
@@ -31,7 +32,7 @@ int main() {
                 printf(generic_error);
                 break;
             case 3:
-                // Pokedex
+                // Pokédex
                 printf(dex_desc);
                 printf(dex_prompt_msg);
                 scanf("%d", &index);
@@ -54,7 +55,7 @@ void print_mon_base_stats(unsigned char mon_index) {
         return;
     }
     printf(
-        stat_template_msg, 
+        stat_template_msg,
         mon_index, 
         mon_names[mon_index], 
         mon_base_hp[mon_index], 

@@ -1,5 +1,5 @@
 // mons.h
-// Pokemon definitions and base stats
+// Pokémon definitions and base stats
 
 #ifndef MONS_H
 #define MONS_H
@@ -7,11 +7,14 @@
 #include "mon_ids.h"
 #include "moves.h"
 
-// amount of Pokemon
-// last index of Pokemon + 1 for MON_NONE
-#define MON_AMOUNT 152
+// amount of Pokémon
+// last index of Pokémon + 1 for MON_NONE
+#define MON_AMOUNT_INTERNAL 152
 
-// Pokemon base stats list
+// amount of Pokémon, without MON_NONE
+#define MON_AMOUNT 151
+
+// Pokémon base stats list
 // entries correspond to MON_* IDs
 const unsigned char *mon_names[] = {
     "(Invalid!)",   // MON_NONE
@@ -168,7 +171,7 @@ const unsigned char *mon_names[] = {
     "Mew",          // MON_MEW
 };
 
-// define a Pokemon struct
+// define a Pokémon struct
 // uses "moves.h" Move struct
 typedef struct {
     unsigned char index;

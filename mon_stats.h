@@ -1,3 +1,6 @@
+// mon_stats.h
+// Pokémon stat lists
+
 #ifndef MON_STATS_H
 #define MON_STATS_H
 

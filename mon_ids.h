@@ -2,9 +2,9 @@
 #define MON_IDS_H
 
 // mon_ids.h
-// a list of Pokemon ID numbers
+// a list of Pokémon ID numbers
 
-// define Pokemon constants
+// define Pokémon constants
 const unsigned char MON_NONE       = 0;
 const unsigned char MON_BULBASAUR  = 1;
 const unsigned char MON_IVYSAUR    = 2;
@@ -157,6 +157,6 @@ const unsigned char MON_DRAGONAIR  = 148;
 const unsigned char MON_DRAGONITE  = 149;
 const unsigned char MON_MEWTWO     = 150;
 const unsigned char MON_MEW        = 151;
-// end Pokemon constant list
+// end Pokémon constant list
 
 #endif
