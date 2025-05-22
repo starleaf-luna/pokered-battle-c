@@ -142,4 +142,6 @@ void handle_fight_menu() {
     opp_mon.level = index;
 
     printf(fight_setup_preview_msg, plr_mon.index, mon_names[plr_mon.index], plr_mon.level, opp_mon.index, mon_names[opp_mon.index], opp_mon.level);
+
+    state = 3;
 }
