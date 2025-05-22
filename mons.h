@@ -198,5 +198,8 @@ typedef struct {
     Move move4;
 } Mon;
 
+Mon plr_mon = {};
+Mon opp_mon = {};
+
 #endif
 

@@ -159,7 +159,7 @@ const unsigned char mon_base_hp[] = {
     100, // MON_MEW
 };
 
-const unsigned char mon_base_atk[MON_AMOUNT] = {
+const unsigned char mon_base_atk[] = {
     0,   // MON_NONE
     49,  // MON_BULBASAUR
     62,  // MON_IVYSAUR

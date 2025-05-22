@@ -5,7 +5,7 @@
 #define MSG_H
 
 // message shown at the start
-const char *start_msg = "Pokemon Red, Blue (International) Battle Engine\nPorted to C by Bellie, 2024\n"
+const char *start_msg = "Pokemon Red, Blue (International) Battle Engine\nPorted to C by Starleaf, 2024-2025\n"
                         "Pokemon is a trademark of Pokemon Company, not mine.\nThanks to pret for the disassembly!\n\n";
                         
 // menu
@@ -53,7 +53,27 @@ const char *stat_error_msg = "Invalid index %d!\n"
                              "This does not include Pokemon from Johto or later,\n"
                              "and Pokemon 0 is invalid.\n\n";
 
+const char *stat_lverror_msg = "Invalid level %d!\n"
+                               "You cannot have Pokemon of levels greater than 100,\n"
+                               "and level 0 is invalid.\n\n";
+
 // test message
 const char *test_prompt_msg = "Enter a number (1-151)... > ";
+
+const char *fight_setup_msg = "Set up a battle by providing which Pokemon you want\n"
+                              "SIMPLE MODE: you'll only provide the species and level; the moves and stats will be automatically computed.\n"
+                              "ADV.   MODE: you'll provide all of the moves and stats yourself. (NOT YET IMPLEMENTED!)\n\n";
+
+const char *fight_setup_basic_msg = "\n\n - BASIC MODE - \n\n";
+
+const char *fight_setup_adv_msg = "\n\n - ADVANCE MODE - \n\n";
+
+const char *fight_setup_level_prompt = "Enter a level (1-100)... > ";
+
+const char *fight_setup_opp_msg = "\n\n * OPPONENT * \n\n";
+
+const char *fight_setup_failsafeID_msg = "A failsafe ID of 1 will be used instead.\n";
+
+const char *fight_setup_preview_msg = "- PLAYER\nID: %d\nName: %s\nLevel: %d\n\n- ENEMY\nID: %d\nName: %s\nLevel: %d\n\n\n";
 
 #endif
